@@ -1,0 +1,283 @@
+{
+  "DHParameter": [
+    {
+      "a": "0",
+      "d": "162.25",
+      "alpha": "1.5707963267948966",
+      "theta": "0",
+      "reverseRotationDirection": "0"
+    },
+    {
+      "a": "-425",
+      "d": "0",
+      "alpha": "0",
+      "theta": "0",
+      "reverseRotationDirection": "0"
+    },
+    {
+      "a": "-392.19999999999999",
+      "d": "0",
+      "alpha": "0",
+      "theta": "0",
+      "reverseRotationDirection": "0"
+    },
+    {
+      "a": "0",
+      "d": "133.30000000000001",
+      "alpha": "1.5707963267948966",
+      "theta": "0",
+      "reverseRotationDirection": "0"
+    },
+    {
+      "a": "0",
+      "d": "99.700000000000003",
+      "alpha": "-1.5707963267948966",
+      "theta": "0",
+      "reverseRotationDirection": "0"
+    },
+    {
+      "a": "0",
+      "d": "99.599999999999994",
+      "alpha": "0",
+      "theta": "0",
+      "reverseRotationDirection": "0"
+    }
+  ],
+  "MechanicalJointLimits": [
+    {
+      "lower": "-6.2849306364315813",
+      "upper": "6.2849306364315813"
+    },
+    {
+      "lower": "-6.2849306364315813",
+      "upper": "6.2849306364315813"
+    },
+    {
+      "lower": "-6.2849306364315813",
+      "upper": "6.2849306364315813"
+    },
+    {
+      "lower": "-6.2849306364315813",
+      "upper": "6.2849306364315813"
+    },
+    {
+      "lower": "-6.2849306364315813",
+      "upper": "6.2849306364315813"
+    },
+    {
+      "lower": "-6.2849306364315813",
+      "upper": "6.2849306364315813"
+    }
+  ],
+  "SoftJointLimits": [
+    {
+      "lower": "-6.2325707588717512",
+      "upper": "6.2325707588717512"
+    },
+    {
+      "lower": "-6.2325707588717512",
+      "upper": "6.2325707588717512"
+    },
+    {
+      "lower": "-2.8623399732707004",
+      "upper": "2.8623399732707004"
+    },
+    {
+      "lower": "-6.2325707588717512",
+      "upper": "6.2325707588717512"
+    },
+    {
+      "lower": "-6.2325707588717512",
+      "upper": "6.2325707588717512"
+    },
+    {
+      "lower": "-6.2325707588717512",
+      "upper": "6.2325707588717512"
+    }
+  ],
+  "Links": [
+    {
+      "mass": "3.7610000000000001",
+      "inertia": {
+        "xx": "0.046790103921167003",
+        "yy": "0.044323368953067002",
+        "zz": "0.025079747468099999",
+        "xy": "0",
+        "xz": "0",
+        "yz": "3.7070475000000002e-06"
+      },
+      "centerOfMass": {
+        "x": "0",
+        "y": "-25.609999999999999",
+        "z": "1.9299999999999999"
+      },
+      "staticFriction": "15.5",
+      "viscousFriction": "20.5",
+      "actuatorInertia": "1.6399999999999999"
+    },
+    {
+      "mass": "8.0579999999999998",
+      "inertia": {
+        "xx": "0.6044714576968",
+        "yy": "0.49894523269680002",
+        "zz": "0.86479127499999997",
+        "xy": "0",
+        "xz": "0.0015657850000000001",
+        "yz": "0"
+      },
+      "centerOfMass": {
+        "x": "212.5",
+        "y": "0",
+        "z": "113.36"
+      },
+      "staticFriction": "15.5",
+      "viscousFriction": "30.5",
+      "actuatorInertia": "0.34999999999999998"
+    },
+    {
+      "mass": "2.8460000000000001",
+      "inertia": {
+        "xx": "0.153490794546667",
+        "yy": "0.077168578500000001",
+        "zz": "0.21552719104666701",
+        "xy": "0",
+        "xz": "0.00025837499999999998",
+        "yz": "0"
+      },
+      "centerOfMass": {
+        "x": "150",
+        "y": "0",
+        "z": "26.5"
+      },
+      "staticFriction": "18.5",
+      "viscousFriction": "17.5",
+      "actuatorInertia": "0.42099999999999999"
+    },
+    {
+      "mass": "1.3700000000000001",
+      "inertia": {
+        "xx": "0.0090850850386669998",
+        "yy": "0.0090806462386670006",
+        "zz": "0.0012052438",
+        "xy": "0",
+        "xz": "0",
+        "yz": "7.9412399999999997e-07"
+      },
+      "centerOfMass": {
+        "x": "0",
+        "y": "-1.8",
+        "z": "16.34"
+      },
+      "staticFriction": "2.5",
+      "viscousFriction": "4.5",
+      "actuatorInertia": "0.14699999999999999"
+    },
+    {
+      "mass": "1.3",
+      "inertia": {
+        "xx": "0.0014907562799999999",
+        "yy": "0.0052241916133330003",
+        "zz": "0.0048813093333330004",
+        "xy": "0",
+        "xz": "0",
+        "yz": "7.9412399999999997e-07"
+      },
+      "centerOfMass": {
+        "x": "0",
+        "y": "1.8",
+        "z": "16.34"
+      },
+      "staticFriction": "2.5",
+      "viscousFriction": "3.5",
+      "actuatorInertia": "0.441"
+    },
+    {
+      "mass": "0.36499999999999999",
+      "inertia": {
+        "xx": "0.001367404347565",
+        "yy": "0.000320412797565",
+        "zz": "0.0013669140499999999",
+        "xy": "0",
+        "xz": "0",
+        "yz": "0"
+      },
+      "centerOfMass": {
+        "x": "0",
+        "y": "0",
+        "z": "-1.159"
+      },
+      "staticFriction": "2.5",
+      "viscousFriction": "3.5",
+      "actuatorInertia": "0.64500000000000002"
+    }
+  ],
+  "Dynamics": [
+    {
+      "cartesianDynamics": {
+        "maxVelocity": "5000",
+        "maxAcceleration": "2000",
+        "maxAngularVelocity": "50",
+        "maxAngularAcceleration": "50",
+        "maxElbowVelocity": "5000",
+        "maxElbowAcceleration": "5000",
+        "maxElbowForce": "5000",
+        "maxTcpForce": "0",
+        "applyAccelerationLimitToComponents": "0"
+      },
+      "jointDynamics": [
+        {
+          "maxVelocity": "3.1415926535897931",
+          "maxAcceleration": "7",
+          "maxDeceleration": "7",
+          "maxTorque": "150",
+          "effTorque": "0"
+        },
+        {
+          "maxVelocity": "3.1415926535897931",
+          "maxAcceleration": "7",
+          "maxDeceleration": "7",
+          "maxTorque": "150",
+          "effTorque": "0"
+        },
+        {
+          "maxVelocity": "3.1415926535897931",
+          "maxAcceleration": "7",
+          "maxDeceleration": "7",
+          "maxTorque": "150",
+          "effTorque": "0"
+        },
+        {
+          "maxVelocity": "3.1415926535897931",
+          "maxAcceleration": "12",
+          "maxDeceleration": "12",
+          "maxTorque": "28",
+          "effTorque": "0"
+        },
+        {
+          "maxVelocity": "3.1415926535897931",
+          "maxAcceleration": "12",
+          "maxDeceleration": "12",
+          "maxTorque": "28",
+          "effTorque": "0"
+        },
+        {
+          "maxVelocity": "3.1415926535897931",
+          "maxAcceleration": "12",
+          "maxDeceleration": "12",
+          "maxTorque": "28",
+          "effTorque": "0"
+        }
+      ],
+      "mode": "OPERATION_AUTO"
+    }
+  ],
+  "PlannerConfiguration": {
+    "hasValidTorqueModel": "0",
+    "maxBlendRatio": "0.85",
+    "validCircleRadius": {
+      "lower": "0.25",
+      "upper": "6000"
+    },
+    "plannerRampTime": "0"
+  }
+}

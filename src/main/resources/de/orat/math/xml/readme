@@ -1,0 +1,15 @@
+Beispielbewegung von einer unserer Schleifanwendungen. Original wurde die Bewegung mit einem Fanuc CRX25 ausgeführt. Für euren UR5 musst du die Bewegung entsprechend skalieren und in den Arbeitsraum verschieben.
+Zu dem .xml:
+
+  *   das "path" Element kennzeichnet immer den nächsten Pfad mit seinem TargetPunkt
+  *   "positionType" ist der Pfadtyp.
+  *   0 = cartesian ptp
+  *   1 = linear
+  *   "orientationType" ist immer 0 (im kartesischen ein slerp und wird ignoriert für ptp)
+  *   "points", sind die Targetpunkte. In unserem Fall dürften keine Kreise dabei sein, 
+      somit gibt es immer nur einen Zielpunkt (oder Zieljoint)
+  *   mit "jointSetting" oder "poseSettings" können noch Geschwindigkeiten oder Beschleunigungen definiert werden. 
+      Wenn nicht weiter angegeben, werden die maximal möglichen Werte angenommen.
+  *   "blending" gibt mit der Position die Überblendzone an
+  *   "collisionObjects" werden die Kollisionsobjekte definiert. Die sind natürlich dann auch nicht mehr gültig, 
+      wenn die Bewegung skaliert wird.
