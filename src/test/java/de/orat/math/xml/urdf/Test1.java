@@ -147,11 +147,11 @@ public class Test1 {
     
     @Test
     public void testURDF2DH() throws SAXException, IOException, ParserConfigurationException {
-        Urdf jurdf = new Urdf(getClass().getResourceAsStream("test.urdf"));
+        Urdf jurdf = new Urdf(getClass().getResourceAsStream("ur5.urdf"));
         Chain robot = jurdf.createChain();
         System.out.println(robot.toURDF());
         Map<String, DH>  dhList = robot.toDH();
-        System.out.println("------------- test test.urdf to DH ---------------------");
+        System.out.println("------------- test ur5.urdf to DH ---------------------");
         System.out.println("link-name, d, theta, r, alpha");
         for (String linkName: dhList.keySet()){
             DH dh = dhList.get(linkName);

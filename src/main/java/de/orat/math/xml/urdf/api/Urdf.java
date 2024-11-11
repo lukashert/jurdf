@@ -513,9 +513,6 @@ public class Urdf {
                 Joint actuatorJoint = new Joint(parent.getName()+"_to_"+actuatorLink.getName(), 
                         parent, actuatorLink, JointType.fixed);
                 chain.addJoint(actuatorJoint);
-                parent.addChild(actuatorJoint);
-                actuatorLink.setParent(actuatorJoint); // TODO sollte bereits beim Erzeugen des Joint gesetzt werden geht aber nicht, dafür in addJoint()
-                
                 //TODO
                 // warum wird hier kein rpyxyz eingetragen?
             }
@@ -621,8 +618,6 @@ public class Urdf {
                     actuatorLink, currentLink, 
                  axis, new RPYXYZ(new RPY(0d,0d,0d), position), JointType.revolute);
             chain.addJoint(joint);
-            actuatorLink.addChild(joint);
-            currentLink.setParent(joint); // TODO sollte bereits beim Erzeugen des Joint gesetzt werden, geht aber nicht, dafür in addJoint()
             parent = currentLink;
         }
         

@@ -172,7 +172,7 @@ public class PhysicalParameters {
         }*/
     }
     
-    public class Link {
+    public static class Link {
         
         @JsonProperty("radius")
         double radius;
@@ -189,7 +189,7 @@ public class PhysicalParameters {
         }
     }
     
-    public class XYZ {
+    public static class XYZ {
         
         @JsonProperty("x")
         double x;
