@@ -124,6 +124,12 @@ public class Chain {
     void calcTFs(){
         System.out.println("calcTFs with rootLink = "+rootLink.getName());
         Collection<Joint> rootLinkJoints = rootLink.getChildren();
+
+        // Set identity transformation for root link
+        var base = new Matrix4d();
+        base.setIdentity();
+        rootLink.setAbsTF(base);
+
         for (Joint joint: rootLinkJoints){
             System.out.println("  calcTFs joint="+joint.getName()+" childlink="+joint.getChild().getName());
             calcTFRecursive(joint.getChild());

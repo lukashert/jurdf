@@ -158,11 +158,9 @@ public class Urdf {
             
             Joint jointObj = new Joint(jointName, parentLink, 
                     childLink, axis, origin, jointType);
-            robot.addJoint(jointObj);
-            
+
             // set the joint into the adjacent links
-            parentLink.addChild(jointObj);
-            //childLink.setParent(jointObj); // TODO sollte bereits beim Erzeugen des Joint gesetzt werden, geht aber nicht dafür in addJoint()
+            robot.addJoint(jointObj);
         }
         robot.init();
         //robot.findRootLink();
