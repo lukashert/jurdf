@@ -188,7 +188,11 @@ public class DHUtils {
         cn.sub(pointA);
         // vn = cn / np.linalg.norm(cn)
         Vector3d vn = new Vector3d(cn);
-        vn.normalize();
+
+        // Check if vn is longer than zero, otherwise a division by zero would be executed.
+        if(Math.abs(vn.length()) > 0){
+            vn.normalize();
+        }
         // zaxis = np.array([0, 0, 1])
         Vector3d zaxis = new Vector3d(0,0,1d); 
         //dh_params[3] = math.atan2(np.dot(np.cross(zaxis, direction), vn), np.dot(zaxis, direction))
